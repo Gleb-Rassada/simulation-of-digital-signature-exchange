@@ -69,7 +69,7 @@ class WinResipient(Tk):
         self.buttonFun1.pack(anchor="n",pady=[0,15])
         self.verifiedLabel.pack(anchor="n",pady=[0,13])
         self.closeButton.pack(anchor="n",pady=[0,15])
-
+# zzz
 
 # Функционал кнопок
     
