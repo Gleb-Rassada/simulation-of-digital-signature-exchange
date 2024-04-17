@@ -1,22 +1,16 @@
 from tkinter import *
-import os
 import tkinter as ttk
 import Lab_3_NOTARY
 import Lab_3_RESIPIENT
 import Lab_3_SENDER
 
-# Главное меню:
-# 1.) Отправитель
-# 2.) Нотариус
-# 3.) Получатель
-# 4.) Выход (из программы)
 
 mainWin = ttk.Tk() #создал объект главного окна
 # background = tk.PhotoImage(file = 'background1.jpg')
 mainWin.config(bg ="#cde5ff")
 # mainWin.iconphoto(False, winIcon)
 mainWin.title("окно граф приложения") # название главного окна
-mainWin.geometry("550x400+820+0") # указал размер окна и плюсами место его появления
+mainWin.geometry("650x400+820+0") # указал размер окна и плюсами место его появления
 mainWin.resizable(False,False) # запретил изменять размер окна по длинне и ширине
 
 # функция закрытия
@@ -77,15 +71,15 @@ buttonClose = ttk.Button(mainWin, text="Выход",
 
 
 label_1.pack(anchor="s",   #располагает лейбл на окне
-             pady=[30,80]) #настроил падинги по y
+             pady=[30,40]) #настроил падинги по y
 
 buttonSender.pack(anchor="s",
               pady=[0,15])
- 
-buttonRecipient.pack(anchor="s",
-              pady=[0,15]) 
 
 buttonNotary.pack(anchor="s",
+              pady=[0,15]) 
+ 
+buttonRecipient.pack(anchor="s",
               pady=[0,15]) 
 
 buttonClose.pack(anchor="s",
@@ -116,3 +110,4 @@ mainWin.mainloop() # так называемый главный цикл сод�
 # 2.) проверяем signedFile
 # 3.) Выход в меню
  
+# скэпи или скапи - библиотека для отправки пакетов
